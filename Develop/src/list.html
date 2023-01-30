@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <title>ToDoList Deadline</title>
+</head>
+
+<body>
+  <div class="grid grid-cols-2">
+    <button id="list-btn">My List</button>
+    <button id="complete-btn">My Completed List</button>
+  </div>
+
+  <div class="event flex space-x-4 justify-center mt-6"> 
+    <h2>Current Local Time is: </h2> 
+    <div class="date"></div>
+  </div>
+
+  <div class=" justify-center auto-fit mt-12">
+    <div class="col-start-3 col-span-2 ">
+      <div class="flex justify-center gap-3">
+        <input type="text" id="input" class="border-solid border-2 border-black rounded-lg" placeholder="Enter your task here">
+        <button id="add-btn" class="bg-green-500 rounded-lg shadow-xl">Add</button>
+        <button id="clear-btn" class="bg-red-500 rounded-lg shadow-xl">Clear</button>
+        <button id="save-btn" class="bg-blue-500 rounded-lg shadow-xl">Save</button>
+        <button id="load-btn" class="bg-yellow-500 rounded-lg shadow-xl">Load</button>
+      </div>
+    
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./assets/index.js"></script> 
+</html>
